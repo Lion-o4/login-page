@@ -3,10 +3,28 @@
   <head>
     <title>sign up</title>
     <style>
+      .page-container {
+        display: flex;
+        margin: 60px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding-bottom: 48px;
+        padding-top: 48px;
+      }
+      .login-part {
+        width: 50%;
+        margin-top: 90px;
+      }
+
+      .login-side-image {
+        width: 50%;
+      }
+      .login-side-image img {
+        height: 700px;
+        width: 600px;
+      }
       .first {
-        text-align: center;
         margin-bottom: 0;
-        width: 1363px;
+        /* margin-left: 187px; */
       }
       .center {
         display: inline-flex;
@@ -14,10 +32,9 @@
       }
 
       .p1 {
-        text-align: center;
         margin-top: 0;
+        /* margin-left: 187px; */
         color: lightgrey;
-        width: 1264px;
         height: 19.2px;
       }
       .submit-btn {
@@ -92,9 +109,10 @@
       }
       .forget-pass {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: baseline;
         gap: 76px;
+        margin-top: 22px;
       }
 
       .sign2 {
@@ -121,89 +139,99 @@
     </style>
   </head>
   <body>
-    <h1 class="first">WELCOME BACK</h1>
-    <p class="p1">Please enter your details</p>
+    <div class="page-container">
+      <div class="login-part">
+        <div style="margin-left: 158px">
+          <h1 class="first">WELCOME BACK</h1>
+          <p class="p1">Please enter your details</p>
+        </div>
 
-    <div style="display: flex; justify-content: center; align-items: center">
-      <button type="submit" class="submit-btn">
+        <div
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <button type="submit" class="submit-btn">
+            <img
+              src="https://imgs.search.brave.com/PdE0_txzUdHcbHT5AhV0yUQJQp1HsegZYHyXHuGZ3vs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0dvb2dsZV8l/MjJHJTIyX2xvZ28u/c3Zn"
+              alt="Google logo"
+              style="width: 20px; height: 20px; margin-right: 10px"
+            />
+
+            <span>Sign in with google</span>
+          </button>
+        </div>
+        <div class="line-container">
+          <hr class="line" />
+          <span>or</span>
+          <hr class="line" />
+        </div>
+
+        <div class="mail1">
+          <label for="email">Email address</label>
+          <input
+            type="text"
+            id="email"
+            style="height: 35px"
+            font-weight:
+            lighter;
+            font-family:
+            Sans-serif;
+          />
+        </div>
+        <div class="mail2">
+          <label for="password" style="width: 364px; padding-top: 23px"
+            >Password</label
+          >
+          <input
+            type="text"
+            id="password"
+            style="height: 35px"
+            font-weight:
+            lighter;
+            font-family:
+            Sans-serif;
+          />
+        </div>
+        <div class="forget-pass">
+          <div>
+            <input type="checkbox" id="remember" />
+            <label for="remember"> Remember for 30 days</label>
+          </div>
+          <div>
+            <a href="">Forgot password</a>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 22px;
+          "
+        >
+          <button type="submit" class="sign2">
+            <span> Sign in </span>
+          </button>
+        </div>
+        <div
+          style="
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+
+            padding-top: 12px;
+            padding-right: 10px;
+          "
+        >
+          <span>Don't have an account?</span>
+          <a href="">Sign up</a>
+        </div>
+      </div>
+      <div class="login-side-image">
         <img
-          src="https://imgs.search.brave.com/PdE0_txzUdHcbHT5AhV0yUQJQp1HsegZYHyXHuGZ3vs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2MxL0dvb2dsZV8l/MjJHJTIyX2xvZ28u/c3Zn"
-          alt="Google logo"
-          style="width: 20px; height: 20px; margin-right: 10px"
+          src="https://img.freepik.com/free-vector/gray-daisy-template-vector-social-media-story-quote-everyday-is-fresh-start_53876-126120.jpg?semt=ais_hybrid&w=740"
+          alt="quote-image"
         />
-
-        <span>Sign in with google</span>
-      </button>
-    </div>
-    <div class="line-container">
-      <hr class="line" />
-      <span>or</span>
-      <hr class="line" />
-    </div>
-
-    <div class="mail1">
-      <label for="email">Email address</label>
-      <input
-        type="text"
-        id="email"
-        style="height: 35px"
-        font-weight:
-        lighter;
-        font-family:
-        Sans-serif;
-      />
-    </div>
-    <div class="mail2">
-      <label for="password" style="width: 364px; padding-top: 23px"
-        >Password</label
-      >
-      <input
-        type="text"
-        id="password"
-        style="height: 35px"
-        font-weight:
-        lighter;
-        font-family:
-        Sans-serif;
-      />
-    </div>
-    <div class="forget-pass">
-      <div>
-        <input
-          type="checkbox"
-          style="margin-left: 550px; margin-top: 30px"
-          id="remember"
-        />
-        <label for="remember"> Remember for 30 days</label>
       </div>
-      <div>
-        <a href="">Forgot password</a>
-      </div>
-    </div>
-    <div
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 22px;
-      "
-    >
-      <button type="submit" class="sign2">
-        <span> Sign in </span>
-      </button>
-    </div>
-    <div
-      style="
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-
-        padding-top: 12px;
-        padding-right: 10px;
-      "
-    >
-      <span>Don't have an account?</span>
-      <a href="">Sign up</a>
     </div>
   </body>
 </html>
